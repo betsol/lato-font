@@ -1,10 +1,13 @@
 {
   "devDependencies": {
+    "change-case": "^2.2.0",
     "del": "~0",
+    "file": "^0.2.2",
     "gulp": "~3",
     "gulp-compass": "~2",
     "gulp-minify-css": "~0",
     "gulp-rename": "~1",
-    "run-sequence": "~0"
+    "run-sequence": "~0",
+    "underscore": "^1.8.2"
   }
 }
