@@ -1,10 +1,11 @@
 # Lato font
 
-This is the latest `2.010` web-version of the OpenSource [Lato font][lato] suitable to be used with [Bower][bower].
+This is the latest official `2.007` web-version of the OpenSource [Lato font][lato]
+suitable to be used with [Bower][bower].
 
 ## Features
 
-- latest web-optimized version of the *Lato* font
+- latest official web-optimized version of the *Lato* font
 - supports all unicode ranges (i.e. languages), variants and styles provided by *Lato* font
 - provides both *CSS* and *SCSS* (*SASS/Compass*) integration options
 - installs with *Bower*
@@ -74,6 +75,7 @@ h1 {
 p.quote {
 	@include lato-font('medium', italic);
 }
+
 ```
 
 You will get the following result in *CSS*:
@@ -84,38 +86,35 @@ You will get the following result in *CSS*:
 @font-face {
   font-family: Lato;
   src: url("/bower_component/lato-font/fonts/lato-black/lato-black.eot");
-  src: url("/bower_component/lato-font/fonts/lato-black/lato-black.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-black/lato-black.woff2") format("woff2"), url("/bower_component/lato-font/fonts/lato-black/lato-black.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-black/lato-black.ttf") format("truetype"), url("/bower_component/lato-font/fonts/lato-black/lato-black.svg#latoblack") format("svg");
+  src: url("/bower_component/lato-font/fonts/lato-black/lato-black.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-black/lato-black.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-black/lato-black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
-
 /* Lato (black, italic) */
 @font-face {
   font-family: Lato;
   src: url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.eot");
-  src: url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.woff2") format("woff2"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.ttf") format("truetype"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.svg#latoblack") format("svg");
+  src: url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
-
 /* Lato (medium, regular) */
 @font-face {
   font-family: "Lato Medium";
   src: url("/bower_component/lato-font/fonts/lato-medium/lato-medium.eot");
-  src: url("/bower_component/lato-font/fonts/lato-medium/lato-medium.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.woff2") format("woff2"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.ttf") format("truetype"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.svg#latoblack") format("svg");
+  src: url("/bower_component/lato-font/fonts/lato-medium/lato-medium.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-
 /* Lato (medium, italic) */
 @font-face {
   font-family: "Lato Medium";
   src: url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.eot");
-  src: url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.woff2") format("woff2"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.ttf") format("truetype"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.svg#latoblack") format("svg");
+  src: url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
-
+/* line 8, ../scss/api-example.scss */
 h1 {
   /* Lato (black, normal) */
   font-family: Lato;
@@ -123,12 +122,14 @@ h1 {
   font-style: normal;
 }
 
+/* line 12, ../scss/api-example.scss */
 p.quote {
   /* Lato (medium, italic) */
   font-family: "Lato Medium";
   font-weight: 400;
   font-style: italic;
 }
+
 ```
 
 You can see the list of available mixins in `/scss/public/_mixins.scss`.
