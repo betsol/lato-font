@@ -1,5 +1,8 @@
 # Lato font
 
+[![Bower version](https://badge.fury.io/bo/lato-font.svg)](http://badge.fury.io/bo/lato-font)
+[![npm version](https://badge.fury.io/js/lato-font.svg)](http://badge.fury.io/js/lato-font)
+
 This is the latest official `2.007` web-version of the OpenSource [Lato font][lato]
 suitable to be used with [Bower][bower] and [npm][npm].
 
