@@ -1,17 +1,19 @@
 # Lato font
 
 This is the latest official `2.007` web-version of the OpenSource [Lato font][lato]
-suitable to be used with [Bower][bower].
+suitable to be used with [Bower][bower] and [npm][npm].
+
 
 ## Features
 
 - latest official web-optimized version of the *Lato* font
 - supports all unicode ranges (i.e. languages), variants and styles provided by *Lato* font
 - provides both *CSS* and *SCSS* (*SASS/Compass*) integration options
-- installs with *Bower*
+- installs with *Bower* and *npm*
 - individual fonts can be added to a project using [*SCSS* integration][scss-api]
 - all fonts can be added to a project just by including provided CSS-file
 - library is extremely customizable and provides very convenient [*SCSS* API][scss-api]
+
 
 ## Installation
 
@@ -19,17 +21,24 @@ suitable to be used with [Bower][bower].
 
 `bower install --save lato-font`
 
+### Install library with *npm*
+
+`npm install --save lato-font`
+
+
 ## Usage
 
 Either [link library directly via *CSS*][css-integration] or use provided [SCSS API][scss-api] in your build process.
 
 By using [*SCSS* API][scss-api] you can easily add individual fonts to your project!
 
+
 ### Hint
 
 *Medium* versions of *Lato* font (both regular and italic) are available under the `Lato Medium` name instead of just `Lato`.
 This is required because *Medium* and *Normal* variants are using the same weight of `400`.
 *CSS* only supports values divisible by `100` for the `font-weight` property.
+
 
 ### CSS integration
 
@@ -52,6 +61,7 @@ p.quote {
   font-style: italic;
 }
 ```
+
 
 ### SCSS API
 
@@ -138,6 +148,7 @@ List of available variants is in `/scss/internal/_variables.scss`.
 
 You can override font path directory using `$lato-font-path` variable.
 
+
 ## Feedback
 
 If you have found a bug or have another issue with the library - please [create an issue][new-issue] in this GitHub repository.
@@ -151,6 +162,7 @@ Have any ideas or propositions? Feel free to contact me by [E-Mail address][emai
 Cheers!
 
 ---
+
 
 ## Licenses
 
@@ -274,5 +286,6 @@ Cheers!
   
   [lato]: http://www.latofonts.com/
   [bower]: http://bower.io/
+  [npm]: https://www.npmjs.com/
   [scss-api]: #scss-api
   [css-integration]: #css-integration
