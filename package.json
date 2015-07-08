@@ -1,4 +1,13 @@
 {
+  "name": "lato-font",
+  "version": "2.0.10",
+  "description": "Lato font",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/betsol/lato-font.git"
+  },
+  "license": "OFL-1.1",
+  "homepage": "http://www.latofonts.com/",
   "devDependencies": {
     "change-case": "~2",
     "del": "~1",
