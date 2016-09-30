@@ -1,5 +1,11 @@
 # lato-font changelog
 
+## Version 2.0.0
+(16 Sep 2016)
+
+- Font updated from **2.007** to **2.015**
+
+
 ## Version 1.1.1
 (08 Jul 2015)
 
