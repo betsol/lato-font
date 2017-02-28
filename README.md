@@ -1,10 +1,10 @@
-# Lato font
+# Lato Font
 
 [![Bower version](https://badge.fury.io/bo/lato-font.svg)](http://badge.fury.io/bo/lato-font)
 [![npm version](https://badge.fury.io/js/lato-font.svg)](http://badge.fury.io/js/lato-font)
 
 This is the latest official `2.015` web-version of the OpenSource [Lato font][lato]
-suitable to be used with [Bower][bower] and [npm][npm].
+suitable to be used with [npm][npm] or [Bower][bower].
 
 
 ## Features
@@ -20,13 +20,13 @@ suitable to be used with [Bower][bower] and [npm][npm].
 
 ## Installation
 
-### Install library with *Bower*
-
-`bower install --save lato-font`
-
 ### Install library with *npm*
 
-`npm i --save lato-font`
+`npm i -D lato-font`
+
+### Install library with *Bower*
+
+`bower install --save-dev lato-font`
 
 
 ## Usage
