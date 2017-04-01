@@ -1,5 +1,11 @@
 # lato-font changelog
 
+## Version 3.0.0
+(01 Apr 2017)
+
+- Dropped support of legacy TTF and EOT (use WOFF2 and WOFF instead)
+
+
 ## Version 2.0.0
 (16 Sep 2016)
 

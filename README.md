@@ -6,6 +6,9 @@
 This is the latest official `2.015` web-version of the OpenSource [Lato font][lato]
 suitable to be used with [npm][npm] or [Bower][bower].
 
+> Support for legacy EOT and TTF font types are dropped in version `3.0.0`.
+> If you need this for [old devices](http://caniuse.com/#feat=woff), please use the version `2.0.0`.
+
 
 ## Features
 
@@ -82,65 +85,11 @@ $lato-font-path: '/bower_component/lato-font/fonts';
 @include lato-include-font('medium');
 
 h1 {
-	@include lato-font('black');
+    @include lato-font('black');
 }
 
 p.quote {
-	@include lato-font('medium', italic);
-}
-
-```
-
-You will get the following result in *CSS*:
-
-```css
-
-/* Lato (black, regular) */
-@font-face {
-  font-family: Lato;
-  src: url("/bower_component/lato-font/fonts/lato-black/lato-black.eot");
-  src: url("/bower_component/lato-font/fonts/lato-black/lato-black.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-black/lato-black.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-black/lato-black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-/* Lato (black, italic) */
-@font-face {
-  font-family: Lato;
-  src: url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.eot");
-  src: url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-black-italic/lato-black-italic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-/* Lato (medium, regular) */
-@font-face {
-  font-family: "Lato Medium";
-  src: url("/bower_component/lato-font/fonts/lato-medium/lato-medium.eot");
-  src: url("/bower_component/lato-font/fonts/lato-medium/lato-medium.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-medium/lato-medium.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-/* Lato (medium, italic) */
-@font-face {
-  font-family: "Lato Medium";
-  src: url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.eot");
-  src: url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.eot?#iefix") format("embedded-opentype"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.woff") format("woff"), url("/bower_component/lato-font/fonts/lato-medium-italic/lato-medium-italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-/* line 8, ../scss/api-example.scss */
-h1 {
-  /* Lato (black, normal) */
-  font-family: Lato;
-  font-weight: 900;
-  font-style: normal;
-}
-
-/* line 12, ../scss/api-example.scss */
-p.quote {
-  /* Lato (medium, italic) */
-  font-family: "Lato Medium";
-  font-weight: 400;
-  font-style: italic;
+    @include lato-font('medium', italic);
 }
 
 ```

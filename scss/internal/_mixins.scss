@@ -7,16 +7,13 @@
 	}
 
 	font-family: $font-name;
-	src: url('#{$lato-font-path}/#{$variant}/#{$variant}.eot');
-	src:
-		url('#{$lato-font-path}/#{$variant}/#{$variant}.eot?#iefix') format('embedded-opentype'),
-		url('#{$lato-font-path}/#{$variant}/#{$variant}.woff2')      format('woff2'),
-		url('#{$lato-font-path}/#{$variant}/#{$variant}.woff')       format('woff'),
-		url('#{$lato-font-path}/#{$variant}/#{$variant}.ttf')        format('truetype')
-	;
 	font-weight: $weight;
 	font-style: $style;
 	text-rendering: optimizeLegibility;
+	src:
+		url('#{$lato-font-path}/#{$variant}/#{$variant}.woff2') format('woff2'),
+		url('#{$lato-font-path}/#{$variant}/#{$variant}.woff')  format('woff')
+	;
 }
 
 // Generates font-faces automatically by iterating provided variants map.
